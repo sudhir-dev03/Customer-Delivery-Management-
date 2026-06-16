@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Track Order</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+
+</head>
+
+<body class="container mt-5">
+
+<h1>Track Your Order</h1>
+
+<form method="GET">
+
+    <input
+        type="text"
+        name="order_id"
+        class="form-control"
+        placeholder="Enter Order ID">
+
+    <br>
+
+    <button class="btn btn-primary">
+
+        Track Order
+
+    </button>
+
+</form>
+
+<br>
+
+{% if order %}
+
+<div class="card">
+
+<div class="card-body">
+
+<h3>Order Details</h3>
+
+<p><b>Order ID:</b> {{ order.order_id }}</p>
+
+<p><b>Phone:</b> {{ order.customer_phone }}</p>
+
+<p><b>Product:</b> {{ order.product }}</p>
+
+<p><b>Quantity:</b> {{ order.quantity }}</p>
+
+<p><b>Status:</b>
+
+{% if order.status == "Pending" %}
+<span class="badge bg-warning">Pending</span>
+
+{% elif order.status == "Assigned" %}
+<span class="badge bg-primary">Assigned</span>
+
+{% elif order.status == "Delivered" %}
+<span class="badge bg-success">Delivered</span>
+
+{% endif %}
+
+</p>
+<p><b>Driver:</b> {{ order.driver_name }}</p>
+
+</div>
+
+</div>
+
+{% endif %}
+
+</body>
+</html>
