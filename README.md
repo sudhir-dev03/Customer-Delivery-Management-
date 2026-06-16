@@ -1,2 +1,2 @@
 # Customer-Delivery-Management-
-A Customer Delivery Management Software developed using Python, Flask, and MySQL. The project focuses on backend development, showcasing database connectivity, efficient data handling, and seamless updates between customers, orders, and delivery status in a food delivery system.
+This project is a Customer Delivery Management System built with Python, Flask, and MySQL. It demonstrates full-stack backend functionality including database integration, CRUD operations, and real-time order tracking. The system manages customer orders, delivery updates, and food dispatch workflows efficiently, highlighting secure and structured data handling between the application and the database.
