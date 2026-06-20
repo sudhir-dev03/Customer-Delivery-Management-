@@ -1,7 +1,7 @@
 DB_CONFIG = {
     "host": "localhost",
     "user": "root",
-    "password": "Smu@6477",
+    "password": "123@Faujdar",
     "database": "seafood_db"
 }
 
